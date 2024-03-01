@@ -367,34 +367,67 @@ footer .interface .line-footer hr{
 }
 
 /*deixando responsivo*/
+/* Regras de mídia queries para tornar o site responsivo */
+@media only screen and (max-width: 1080px) {
+    .logo img {
+        width: 9rem;
+    }
+}
+
 @media only screen and (max-width: 950px) {
-    .card-login {
-        width: 85%;
+    header nav ul li {
+        padding: 0 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .topo-do-site h1 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .topo-do-site .img-topo-site img {
+        max-width: 80%;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    .main-login {
+    .titulo {
+        margin-top: 100px;
+    }
+
+    .especialidades .flex {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .especialidades-box {
+        text-align: center;
+    }
+
+    .sobre .flex {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    .img-sobre img {
+        max-width: 80%;
+    }
+
+    .txt-sobre {
+        text-align: center;
+    }
+
+    .portfolio .flex {
         flex-direction: column;
     }
 
-    .left-login>h1 {
-        display: none;
-    }
-
-    .left-login {
+    .img-port {
         width: 100%;
         height: auto;
     }
 
-    .right-login {
-        width: 100%;
-        height: auto;
-    }
-    .left-login img{
-        width: 60vw;
-    }
-    .card-login{
-        width: 80%;
+    .btn-social button {
+        margin-top: 10px;
     }
 }
