@@ -367,72 +367,34 @@ footer .interface .line-footer hr{
 }
 
 /*deixando responsivo*/
-/* Estilo geral */
-@media only screen and (max-width: 768px) {
-    /* Ajustes para telas menores */
-    body {
-        font-size: 14px; /* Reduzir o tamanho da fonte */
+@media only screen and (max-width: 950px) {
+    .card-login {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main-login {
+        flex-direction: column;
     }
 
-    header .logo img {
-        width: 8rem; /* Reduzir o tamanho do logo */
+    .left-login>h1 {
+        display: none;
     }
 
-    header nav ul li {
-        padding: 0 20px; /* Reduzir o espaçamento entre os itens do menu */
-    }
-
-    section.topo-do-site .flex {
-        flex-direction: column; /* Mudar a direção dos elementos */
-        align-items: center;
-        text-align: center;
-    }
-
-    .img-topo-site img {
-        width: 200px; /* Reduzir o tamanho da imagem */
-    }
-
-    .especialidades .flex {
-        flex-direction: column; /* Mudar a direção dos elementos */
-        align-items: center;
-        text-align: center;
-    }
-
-    .especialidades-box {
-        width: 80%; /* Reduzir a largura das caixas de especialidades */
-    }
-
-    .img-sobre img {
-        width: 250px; /* Reduzir o tamanho da imagem */
-    }
-
-    .btn-social button {
-        width: 50px;
-        height: 50px;
-        font-size: 24px;
-    }
-
-    .flex {
-        flex-direction: column; /* Mudar a direção dos elementos */
-        align-items: center;
-        text-align: center;
-    }
-
-    .img-port {
-        width: 80%; /* Reduzir a largura das imagens do portfólio */
+    .left-login {
+        width: 100%;
         height: auto;
     }
 
-    form {
-        max-width: 90%; /* Reduzir a largura do formulário */
+    .right-login {
+        width: 100%;
+        height: auto;
     }
-
-    form input, form textarea {
-        padding: 15px 10px; /* Reduzir o preenchimento dos inputs */
-        font-size: 16px; /* Reduzir o tamanho da fonte */
+    .left-login img{
+        width: 60vw;
     }
-
-    form .btn-enviar input {
-        width: 100%; /* Preencher toda a largura do botão */
+    .card-login{
+        width: 80%;
     }
 }
